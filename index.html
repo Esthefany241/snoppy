@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="prueba.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Poppins:ital,wght@1,600&family=Rubik+Glitch+Pop&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="encriptador">
+            <h1>Mi Encriptador</h1>
+            <textarea id="texto" placeholder="Ingrese su texto aquí" oninput="showActionButtons()"></textarea>
+            <div class="button-section">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="esperando">
+            <center><img src="img/escribiendo.gif.gif" alt="" id="esperando" /></center>
+            <div class="mensaje-encriptado" id="mensaje-encriptado">    
+                <h2 id="titulo-mensaje">No hay nada</h2>
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>Derechos de autor - STNSYM &copy;</footer>
+    <script src="prueba.js"></script>
+</body>
+</html>
